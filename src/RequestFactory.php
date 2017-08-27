@@ -8,11 +8,9 @@
 
 namespace Pls\Http\Message;
 
-interface Response extends Message
+use Pls\Identifier\Uri\Uri;
+
+interface RequestFactory
 {
-    public function getReasonPhrase(): string;
-
-    public function getStatusCode(): int;
-
-    public function withStatus(int $code, string $reasonPhrase = ''): Response;
+    public function createRequest(string $method, Uri $uri): Request;
 }

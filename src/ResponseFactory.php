@@ -8,11 +8,7 @@
 
 namespace Pls\Http\Message;
 
-interface Response extends Message
+interface ResponseFactory
 {
-    public function getReasonPhrase(): string;
-
-    public function getStatusCode(): int;
-
-    public function withStatus(int $code, string $reasonPhrase = ''): Response;
+    public function createResponse(int $code = Status::OK): Response;
 }

@@ -8,7 +8,7 @@
 
 namespace Pls\Http\Message;
 
-interface ServerRequest
+interface ServerRequest extends Request
 {
     public function getAttribute(string $name, $default = null): string;
 
