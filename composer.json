@@ -1,0 +1,25 @@
+{
+    "name": "pls/http-message",
+    "description": "PLS HTTP message specification",
+    "keywords": [
+        "PLS", "HTTP", "message"
+    ],
+    "homepage": "https://github.com/PHP-library-standards/http-message",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP Library Standards",
+            "homepage": "https://github.com/PHP-library-standards"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "pls/identifier-uri": "*",
+        "pls/stream": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pls\\Http\\Message\\": "src"
+        }
+    }
+}
