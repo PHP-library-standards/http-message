@@ -15,7 +15,7 @@
     "require": {
         "php": "^7.1",
         "pls/identifier-uri": "*",
-        "pls/stream": "*"
+        "pls/data-stream": "*"
     },
     "autoload": {
         "psr-4": {
