@@ -8,7 +8,7 @@
 
 namespace Pls\Http\Message;
 
-use Pls\Stream\Stream;
+use Pls\Data\Stream\Stream;
 
 interface UploadedFile
 {
