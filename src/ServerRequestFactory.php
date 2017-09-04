@@ -8,16 +8,14 @@
 
 namespace Pls\Http\Message;
 
+use Pls\Data\Stream\Stream;
 use Pls\Identifier\Uri\Uri;
 
 interface ServerRequestFactory
 {
     public function createServerRequest(
         Uri $uri,
+        Stream $body,
         string $method = Method::GET
-    ): ServerRequest;
-
-    public function createServerRequestFromValue(
-        iterable $server
     ): ServerRequest;
 }

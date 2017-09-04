@@ -8,7 +8,12 @@
 
 namespace Pls\Http\Message;
 
+use Pls\Data\Stream\Stream;
+
 interface ResponseFactory
 {
-    public function createResponse(int $code = Status::OK): Response;
+    public function createResponse(
+        Stream $body,
+        int $code = Status::OK
+    ): Response;
 }
